@@ -134,7 +134,7 @@ export default function Home() {
   }, [handleTime, dataque]);
 
   return (
-    <div className="container mx-auto pt-8 text-center">
+    <div className="container max-w-[90%] mx-auto pt-14 text-center ">
       {!finish ? (
         <>
           <p className="mb-16 flex items-center justify-center text-2xl">
@@ -153,7 +153,7 @@ export default function Home() {
             {dataque?.[current]?.question}
           </h3>
           {/* answers section */}
-          <section className="relative mx-auto flex-col items-center justify-center space-y-5 px-4 pt-6 text-xl md:w-lg xl:w-lg">
+          <section className="relative mx-auto flex-col items-center justify-center space-y-5 px-4 pt-16 text-xl w-xs sm:w-xl  ">
             {shuffledAnswers[current]?.map((ans: string, i: number) => (
               <button
                 onClick={() => handelAnswer(ans)}
@@ -178,13 +178,13 @@ export default function Home() {
             ))}
 
             <div
-              className={`absolute top-8 -right-60 font-bold ${timeend ? 'text-red-600' : 'text-black'}`}
+              className={`absolute top-2 -right-4 md:-right-24 xl:-right-60 font-bold ${timeend ? 'text-red-600' : 'text-black'}`}
             >
               {handleTime}
             </div>
 
             {/* buttons section */}
-            <section className="flex items-center justify-between pt-14">
+            <section className="flex items-center justify-between pt-4 mb-4">
               <button
                 onClick={handlepreviousButton}
                 disabled={stopprevious}
