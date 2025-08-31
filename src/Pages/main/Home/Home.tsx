@@ -134,9 +134,9 @@ export default function Home() {
   }, [handleTime, dataque]);
 
   return (
-    <div className="container max-w-[90%] mx-auto pt-14 text-center ">
+    <div className="container max-w-[90%] mx-auto  text-center ">
       {!finish ? (
-        <>
+        <div className='pt-6'>
           <p className="mb-16 flex items-center justify-center text-2xl">
             question{' '}
             <span className="mx-2 flex h-10 w-10 items-center justify-center rounded-full bg-amber-200 shadow-xs shadow-black">
@@ -201,10 +201,10 @@ export default function Home() {
               </button>
             </section>
           </section>
-        </>
+        </div>
       ) : (
         <>
-          <div className='flex justify-center items-center min-h-screen'>
+          <div className='flex justify-center items-center min-h-screen overflow-hidden'>
             <div className="w-[350px] rounded-2xl bg-white p-8 text-center shadow-lg">
             <h2 className="mb-4 text-xl font-bold">Your Result</h2>
             <p>
