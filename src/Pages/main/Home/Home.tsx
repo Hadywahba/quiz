@@ -204,7 +204,7 @@ export default function Home() {
         </div>
       ) : (
         <>
-          <div className='flex justify-center items-center min-h-screen overflow-hidden'>
+          <div className='flex justify-center items-center min-h-dvh overflow-hidden'>
             <div className="w-[350px] rounded-2xl bg-white p-8 text-center shadow-lg">
             <h2 className="mb-4 text-xl font-bold">Your Result</h2>
             <p>
