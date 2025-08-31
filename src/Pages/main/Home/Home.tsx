@@ -204,18 +204,20 @@ export default function Home() {
         </>
       ) : (
         <>
-          <div className="w-[350px] rounded-2xl bg-white p-6 text-center shadow-lg">
-            <h2 className="mb-4 text-xl font-bold">result</h2>
+          <div className='flex justify-center items-center min-h-screen'>
+            <div className="w-[350px] rounded-2xl bg-white p-8 text-center shadow-lg">
+            <h2 className="mb-4 text-xl font-bold">Your Result</h2>
             <p>
               {score} from {dataque?.length}
             </p>
 
             <button
               onClick={resetExam}
-              className="cursor-pointer bg-white px-8 py-2 text-emerald-900 shadow-xs shadow-black"
+              className="cursor-pointer bg-white px-8 py-2 text-emerald-900 shadow-xs shadow-black mt-4"
             >
               reset exam{' '}
             </button>
+          </div>
           </div>
         </>
       )}
